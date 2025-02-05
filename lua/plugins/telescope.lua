@@ -9,6 +9,11 @@ return {
         function() require("telescope.builtin").find_files() end,
         desc = "Find Plugin File",
       },
+      {
+        "<C-tg>",
+        function() require("telescope.builtin").live_grep() end,
+        desc = "Find with grep"
+      }
     },
     -- change some options
     opts = {
